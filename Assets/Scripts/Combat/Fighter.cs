@@ -29,6 +29,7 @@ namespace RPG.Combat
             else
             {
                 GetComponent<Mover>().Cancel();
+                transform.LookAt(target.transform);
                 AttackBehaviour();
             }
         }
