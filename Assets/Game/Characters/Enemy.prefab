@@ -28,7 +28,7 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 1, z: 0}
---- !u!114 &9012891117305173450
+--- !u!114 &6367113504593727942
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -37,9 +37,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 5609628619965283674}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 84d78243733b6144d9b6566a83ad657b, type: 3}
+  m_Script: {fileID: 11500000, guid: 3cc8f9f4da473464ba50499efd50d9bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  weaponRange: 2
+  timeBetweenAttacks: 1
+  weaponDamage: 5
 --- !u!114 &6776516208087506017
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50,6 +53,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ded7dbd249d0816488a694cc3e27727d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  chaseDistance: 5
+--- !u!114 &9012891117305173450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5609628619965283674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84d78243733b6144d9b6566a83ad657b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &3771304896740338682
@@ -123,6 +139,11 @@ PrefabInstance:
         type: 3}
       propertyPath: health
       value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8759283918668240546, guid: 3dff951ef3d09c3458ad55d889755070,
+        type: 3}
+      propertyPath: m_Speed
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3dff951ef3d09c3458ad55d889755070, type: 3}
