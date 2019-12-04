@@ -56,6 +56,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   chaseDistance: 5
+  suspicionTime: 5
 --- !u!114 &9012891117305173450
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -135,15 +136,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5004493887453575186, guid: 3dff951ef3d09c3458ad55d889755070,
-        type: 3}
-      propertyPath: health
-      value: 20
-      objectReference: {fileID: 0}
     - target: {fileID: 8759283918668240546, guid: 3dff951ef3d09c3458ad55d889755070,
         type: 3}
       propertyPath: m_Speed
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004493887453575186, guid: 3dff951ef3d09c3458ad55d889755070,
+        type: 3}
+      propertyPath: health
+      value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3dff951ef3d09c3458ad55d889755070, type: 3}
