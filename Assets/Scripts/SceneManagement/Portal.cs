@@ -8,12 +8,20 @@ namespace RPG.SceneManagement
 {
     public class Portal : MonoBehaviour
     {
+
+        enum DestinationIdentifier
+        {
+            A, B, C, D, E
+        }
+
         //In File>Build Settings, make sure to drag the scenes in the proper order
         //To give them the right scene index. That way, you can now load scenes based
         //On their index, incase you change the scene's name
         [SerializeField] int sceneToLoad = -1;
 
         [SerializeField] Transform spawnPoint;
+
+        [SerializeField] DestinationIdentifier destination;
 
 
 
@@ -62,6 +70,7 @@ namespace RPG.SceneManagement
             foreach(Portal portal in FindObjectsOfType<Portal>())
             {
                 if(portal == this) continue;
+                if(portal.destination != destination) continue;
 
                 return portal;
             }
